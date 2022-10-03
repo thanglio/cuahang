@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/stylesp.css">
+    
+</head>
+<body>
+    <div id="main">  
+        <div id="header">
+            <ul id="nav">               
+                <li><a href="">Home</a></li>
+                <li>
+                    <a href="#">Products</a>
+                    <ul class="subnav">
+                        <li><a href="">Quần</a></li>
+                        <li><a href="">Áo</a></li>
+                        <li><a href="">Phụ Kiện</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Sign In</a></li>
+                <li>
+                    <div class="search">
+                        <input type="text">
+                        <button type="submit">Search</button>
+                    </div>
+                </li>
+            </ul>
+            
+        </div>
+        
+        <div id="slide_content">
+            <div id="slider">
+                <ul>
+                    <li><a href="#">Sản phẩm ưa chuộng</a></li>
+                    <li><a href="#">Top 1 trending</a></li>
+                    <li><a href="#">Sản phẩm mới</a></li>
+                    <li><a href="#">Phụ Kiện hàng đầu</a></li>
+                    <li><a href="#">Mã giảm giá $$$</a></li>
+                </ul>           
+            </div>
+
+            <div id="content">    
+                <div id="icon_slider">
+                    <a href="" class="icon">Facebook</a>
+                    <a href="" class="icon">Zalo</a>
+                    <a href="" class="icon">Twitter</a>
+                    <a href="" class="icon">Add</a>
+                </div>   
+                
+                <div id="sanpham">
+                    <div class="anh">
+                        
+<h2 style="text-align:center">Đầm nữ</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="assets/css/imgs/sp3.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="assets/css/imgs/sp31.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="assets/css/imgs/sp32.jpg" >
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="assets/css/imgs/sp33.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="assets/css/imgs/sp31.jpg" >
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="assets/css/imgs/sp32.jpg" >
+  </div>
+  
+  
+
+  <div class="row" style="display:flex ">
+    <div class="column" >
+      <img class="demo cursor" src="assets/css/imgs/sp3.jpg" style="width:80px;height: 120px;" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="assets/css/imgs/sp31.jpg" style="width:80px;height: 120px;" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="assets/css/imgs/sp32.jpg" style="width:80px;height: 120px;" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="assets/css/imgs/sp33.jpg" style="width:80px;height: 120px;" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="assets/css/imgs/sp31.jpg" style="width:80px;height: 120px;" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="assets/css/imgs/sp32.jpg" style="width:80px;height: 120px;" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+                    </div>
+
+                    <div class="thongtinsp">
+                      <h2 style="color: brown;">Đầm ngủ Sexy lụa tơ tằm</h2>
+                      <h4>Thương hiệu: <strong style="color: red;"> UniQue</strong></h4>
+                      <h3>Giá gốc: <em style="color: red;text-decoration:line-through red solid">490.000<sup>đ</sup></em></h3>
+                      <h1>Sale chỉ còn: <em style="color: red;">250.000<sup>đ</sup></em></h1>
+                      <h3>Size:</h3>
+                      <div class="size" style="display: flex;">
+                        <div class="sizes"><button style="width:20px ;">XL</button></div>
+                        <div class="sizes"><button style="width:20px ;">L</button></div>
+                        <div class="sizes"><button style="width:20px ;">S</button></div>
+                      </div>
+                      <h3>Color:</h3>
+                      <div class="mau" style="display: flex;">
+                        <div class="maus"><button>Trắng</button></div>
+                        <div class="maus"><button>Xám</button></div>
+                        <div class="maus"><button>Nâu</button></div>
+                        <div class="maus"><button>Xanh đen</button></div>
+                      </div>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <div class="btn" style="display: flex ;">
+                        <a href="#"><div class="btns">Thêm vào giỏ hàng</div></a>
+                        <a href="#"><div class="btns">Đặt mua ngay</div></a>
+
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div id="footer">   
+            <h4>Contact </h4>
+            <h4>    Email: nobitalio@gmail.com</h4>
+            <h4>    Phone: 0796395993</h4>
+            <h4>Infor: This product was create by Thang Lio</h4>
+
+        </div>
+    </div>
+  
+</body>
+</html>

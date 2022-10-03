@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop của Thăng Lio</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body onload="myF()">
+    <div id="main">  
+        <div id="header">
+            <ul id="nav">               
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">Products</a>
+                    <ul class="subnav">
+                        <li><a href="">Quần</a></li>
+                        <li><a href="">Áo</a></li>
+                        <li><a href="">Phụ Kiện</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Sign In</a></li>
+                <li>
+                    <div class="search">
+                        <input type="text">
+                        <button type="submit">Search</button>
+                    </div>
+                </li>
+            </ul>
+            
+        </div>
+        
+        <div id="slide_content">
+            <div id="slider">
+                <ul>
+                    <li><a href="#">Sản phẩm ưa chuộng</a></li>
+                    <li><a href="#">Top 1 trending</a></li>
+                    <li><a href="#">Sản phẩm mới</a></li>
+                    <li><a href="#">Phụ Kiện hàng đầu</a></li>
+                    <li><a href="#">Mã giảm giá $$$</a></li>
+                </ul>           
+            </div>
+
+            <div id="content">               
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="assets/css/imgs/img11.jpg" style="width:100%; height: 483px">
+                      <div class="text">Caption Text</div>
+                    </div>
+    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="assets/css/imgs/img12.jpg" style="width:100%">
+                      <div class="text">Caption Two</div>
+                    </div>
+    
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="assets/css/imgs/img13.jpg" style="width:100%; height: 483px">
+                      <div class="text">Caption Three</div>
+                    </div>
+    
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                </div>
+                
+                <div id="icon_slider">
+                    <a href="" class="icon">Facebook</a>
+                    <a href="" class="icon">Zalo</a>
+                    <a href="" class="icon">Twitter</a>
+                    <a href="" class="icon">Add</a>
+                </div>
+                <div class="product">
+                    <div class="card">
+
+                        <a href="sp1.html"><img src="assets/css/imgs/sp1.jpg" alt="áo" style="width:100%">
+                        <div class="container">
+                            <h4><b>Sơ mi nam</b></h4> 
+                            <p>Architect & Engineer</p> 
+                        </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="sp2.html">
+                        <img src="assets/css/imgs/sp3.jpg" alt="áo" style="width:100%">
+                        <div class="container">
+                            <h4><b>Đầm nữ</b></h4> 
+                            <p>Architect & Engineer</p> 
+                        </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="sp2.html">
+                        <img src="assets/css/imgs/sp4.jpg" alt="áo" style="width:100%">
+                        <div class="container">
+                            <h4><b>Đầm nữ</b></h4> 
+                            <p>Architect & Engineer</p> 
+                        </div>
+                        </a>
+                    </div>
+
+
+                </div>
+                <div class="support">
+                    <button class="open-button" onclick ="openForm()">
+                      <img src="assets/css/imgs/logohotro.jfif" style="width: 100%;" alt="Hỗ Trợ" >
+                
+                    </button>
+                    <div class="chat-popup" id="myForm">
+                      <form action="/action_page.php" class="form-container">
+                        <h1>Hỗ trợ</h1>
+                    
+                        <label for="msg"><b></b></label>
+                        <textarea placeholder="Câu hỏi của bạn" name="msg" required></textarea>
+                    
+                        <button type="submit" class="btn">Gửi</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Đóng</button>
+                      </form>
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <div class="thongtin" style="display:flex ;">
+                    <div class="vanban" style="width:40% ;">
+                    <h2>Mua Hàng Hiệu Cao Cấp Giá Tốt Tại ShopLIOThang.com</h2>
+                    <p>Shop còn có rất nhiều khuyến mãi khủng cho hàng hiệu giảm đến 50%. 
+                    Cộng với mã giao hàng miễn phí, kèm các mã giảm giá được phân phối mỗi
+                    tháng từ rất nhiều gian hàng chính hãng tham gia chương trình khuyến mãi này.</p>
+                    </div>
+                    <div class="video" style="width: 60%;">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/1ERpzc1L94c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </div>
+            </div>
+            <div class="float-ck" style="right: 0px">
+                <div id="hide_float_right">
+                    <a href="javascript:hide_float_right()">Tắt quảng cáo[X]</a></div>
+                    <div id="float_content_right">
+                        <!-- Start quang cao-->
+                        <img src="assets/css/imgs/sp1.jpg" style="width: 275px; height: 250px;">
+                        <H3>Áo Sơ Mi Nam Cao Cấp</H3>
+                        <h3 style="color: rgb(249, 8, 8);">Giá chỉ còn 250k</h3>
+                        <!-- End quang cao -->
+                    </div>
+                </div>
+                <!-- QUẢNG CÁO GIỮA -->
+                
+                <!-- KẾT THÚC QUẢNG CÁO GIỮA -->
+        </div>
+
+
+
+
+        <div id="footer">   
+            <h4>Contact </h4>
+            <h4>    Email: nobitalio@gmail.com</h4>
+            <h4>    Phone: 0796395993</h4>
+            <h4>Infor: This product was create by Thang Lio</h4>
+
+        </div>
+    </div>
+  
+    
+
+
+
+    <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    function openForm() {
+            document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
+
+    function hide_float_right() {
+    var content = document.getElementById('float_content_right');
+    var hide = document.getElementById('hide_float_right');
+    if (content.style.display == "none")
+    {content.style.display = "block"; hide.innerHTML = '<a href="javascript:hide_float_right()"> Tắt quảng cáo [X]</a>'; }
+        else { content.style.display = "none"; hide.innerHTML = '<a href="javascript:hide_float_right()">Sản Phẩm Khuyến Mại 75%</a>';
+    }
+    }
+	function myF(){
+      onl.style.display = "block";
+      
+    }
+    function un(){
+        onl.style.display = "none";
+    }
+    </script>
+</body>
+</html>
